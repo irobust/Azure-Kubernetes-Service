@@ -1,12 +1,6 @@
-# Azure Kubernetes Service (AKS) - The Big Picture
+# Azure Kubernetes Service (AKS)
 
-## Module 2 - AKS in Action
-
-**To run the sample application**
-
-```bash
-docker container run --name myappv1 --detach -p 8080:80 manojnair/myapp:v1
-```
+## Connect to Azure
 
 **To log into Azure**
 
@@ -49,6 +43,13 @@ az aks install-cli
 kubectl get nodes
 ```
 
+## Run sample application
+
+**To run the sample application on docker**
+
+```bash
+docker container run --name myappv1 --detach -p 8080:80 manojnair/myapp:v1
+```
 
 **To check for deployments** 
 
@@ -70,7 +71,7 @@ kubectl get pods
 kubectl create deployment myapp --image=manojnair/myapp:v1 --replicas=1
 ```
 
-
+## Scaling application
 **To scale a deployment**
 
 ```bash
