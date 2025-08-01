@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: manojnair/myapp:v2
+        image: manojnair/myapp:v3
         imagePullPolicy: IfNotPresent
       restartPolicy: Always
   selector:
@@ -32,4 +32,4 @@ spec:
     app: hello
   ports:
     - port: 80
-  type: LoadBalancer
+  type: ClusterIP
