@@ -12,7 +12,13 @@
 
 * Create Ingress Definition
     ```bash
-    kubectl create ingress web --rule="/=web:80" --class=webapprouting.kubernetes.azure.com
+    kubectl create ingress myapp --rule="/=hello-service:80" --class=webapprouting.kubernetes.azure.com
+    ```
+
+    or
+    
+    ```bash
+    kubectl apply -f ingress.yaml
     ```
     
     web is a service name
