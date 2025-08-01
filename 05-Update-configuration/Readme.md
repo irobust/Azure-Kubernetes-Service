@@ -3,8 +3,8 @@
 ```bash
 az aks update \
     --resource-group $RG \
-    --cluster-name $AKS \
-    --auto-update-chanel stable \
+    --name $AKS \
+    --auto-upgrade-chanel stable \
     --node-os-upgrade-chanel securitypatch
 ```
 

@@ -14,6 +14,6 @@ spec:
   #   path: "/export/volumes/pod"
   hostPath:
     # path: "/c/mongo-data/data"
-    # path: "/c/Users/Training/Documents/mongo-data/data"
-    path: "/Users/phanupong/Documents/Workshop/Kubernetes-Workshop-1/mongo-data"
+    path: "/d/mongo-data"
+    # path: "/Users/phanupong/Documents/Workshop/Kubernetes-Workshop-1/mongo-data"
     

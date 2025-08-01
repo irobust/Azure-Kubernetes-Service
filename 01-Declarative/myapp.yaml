@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: manojnair/myapp:v3
+        image: myacr3423.azurecr.io/akswebapp:v1
         imagePullPolicy: IfNotPresent
       restartPolicy: Always
   selector:
