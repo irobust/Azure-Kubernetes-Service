@@ -1,6 +1,15 @@
 # Kubernetes Storage
 ## Working with Host Path
+* Create Deployment and PVC
+```bash
+kubectl apply -f mongo.yaml
+kubectl apply -f pvc.yaml
+```
 
+* Get PV and PVC
+```bash
+kubectl get pv,pvc
+```
 
 ## Working with Azure File
 * kubectl exec to check the contents of a file:
