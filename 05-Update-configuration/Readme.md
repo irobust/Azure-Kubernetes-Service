@@ -8,7 +8,8 @@ az aks update \
     --node-os-upgrade-chanel securitypatch
 ```
 
-## Set Auto-update NodeOS
+## Set Maintenance Configuration
+### Set update Node OS schedule 
 ```bash
 az aks maintenanceconfiguration add \
     --resource-group $RG \
@@ -22,7 +23,7 @@ az aks maintenanceconfiguration add \
     --start-time 00:00
 ```
 
-## Set Auto-update Cluster
+### Set update cluster schedule
 ```bash
 az aks maintenanceconfiguration add \
     --resource-group $RG \
